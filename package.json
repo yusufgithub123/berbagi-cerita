@@ -1,0 +1,37 @@
+{
+  "name": "storyshare-app",
+  "version": "1.0.0",
+  "description": "Aplikasi berbagi cerita dengan gambar dan lokasi",
+  "main": "index.js",
+  "homepage": "https://yusufgithub123.github.io/story-share",
+  "scripts": {
+    "start-dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.2",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "vite-plugin-pwa": "^1.0.0",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.2",
+    "webpack-merge": "^5.8.0",
+    "workbox-webpack-plugin": "^6.6.0"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.11"
+  }
+}
